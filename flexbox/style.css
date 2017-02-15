@@ -16,18 +16,26 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 /* Colors for each box */
-.box1 { background: #1abc9c;}
-.box2 { background: #3498db;}
+
 
 .container {
-	display: flex;	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border: 10px solid aliceblue;
+	height: 100vh;
 }
 
-/*flex consists of flex-grow flex-shrink flex-basis*/
-.box1 {
-	flex: 10 5 400px;
+/*flex-basis and wrapping work together*/
+.box {
+	flex-basis: 250px;
+	border: 10px solid pink;
+	background: rgba(251, 216, 228, 0.3);
+	flex-grow: 1;
 }
 
-.box2 {
-	flex: 1 1 400px;
+.box3 {
+	flex-grow: 5;
 }
+
+
