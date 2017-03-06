@@ -1,0 +1,245 @@
+@font-face {
+	font-family: 'TTL';
+	src: url('../fonts/TTLakes-Medium.otf');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-family: 'TTL';
+    font-size: 16px;
+    height: 100vh;
+}
+
+li, ul {
+    color: #333;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+#workspace{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100vw;
+	background: #f4f4f4;
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+    z-index: 10000;
+}
+
+.header-wrapper {
+	padding: 0 5%;
+}
+
+
+.logo {
+	margin: 0 auto;
+	width: 200px;
+	float: left;
+	cursor: pointer;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav a{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	text-shadow: 5px;
+}
+
+header:after, footer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+
+#main-wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-wrapper section {
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#about-blur {
+    background-image: url(../images/background-3.jpg);
+    filter: blur(2px);
+    z-index: 1;
+    position: absolute;
+    empty-cells: show;
+    width: 100vw;
+    height: 100vh;
+}
+
+#about {
+    position: relative;
+    background-color: transparent;
+    z-index: 2;    
+}
+
+.info:nth-child(2) {
+    background-image: url(../images/background-2.jpg);
+}
+
+.info:nth-child(3) {
+    background-image: url(../images/background-3.jpg);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about, #advantages, #try {
+    align-self: center;
+    margin: 0 auto;
+}
+
+#workflow {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background: transparent url(../images/background-3.png) no-repeat center center;
+    background-size: contain;
+
+}
+
+#try a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border: 3px dashed #fff;
+}
+
+h1.info-title {
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'TTL';
+}
+
+p.info-text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: #fefefe;
+    font-size: 1.5em;
+}
+
+
+footer {
+    /*position: absolute;*/
+    bottom: 0;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+    color: #fefefe;
+    z-index: 10000;
+    display: flex;
+    width: 100%;
+    background: #202020;
+	padding: 15px 0;
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+footer h2 {    
+    position: relative;
+	float: left;
+    padding-top: 5px;
+	margin: 0 0 0 20px;
+	color: #eee;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+footer h2 div {
+    top: 0px;
+    font-size: 2em;
+	padding: 10px;
+	float: left;
+}
+
+footer address a {
+    color: #fff;
+    text-align: left;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+    display: inline-block;
+    width: 40%;
+}
+
+.left ul li {
+    padding: 1%;
+    color: #333 !important;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.left ul li:hover {
+    text-decoration: none;
+}
+
+.right {
+    margin-right: 50px;
+    text-align: right;
+    margin-top: 20px;
+    display: inline-block;
+    float: right;
+    width: 40%;
+}
+
+.right a {
+    padding: 5px;
+    border: 1px solid #333;
+}
